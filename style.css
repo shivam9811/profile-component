@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+--Dark-gray: hsl(0, 0%, 59%);
+}
+body{
+    text-transform:capitalize;
+    background: url(./images/bg-pattern-bottom.svg) bottom -700px right -250px no-repeat, url(./images/bg-pattern-top.svg) top -500px left -200px no-repeat;
+    background-size: 65% ,60%;
+    display: flex;
+    background-color: var(--Dark-cyan);
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kumbh Sans',sans-serif;
+    line-height: 1.4;
+}
+.container{
+    width:20rem;
+    height: 23rem;
+    border-radius:1rem;
+    background-color:white;
+    margin-top:10rem;
+}
+.bg{
+    height:9rem;
+    width:100%;
+    background-image: url(./images/bg-pattern-card.svg);
+    border-radius:1rem 1rem 0rem 0rem;
+    background-repeat: no-repeat;
+}
+
+.profile{
+    background-size: cover;
+    background-image: url(./images/image-victor.jpg);
+    background-repeat: no-repeat;
+    width:7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border:7px solid white;
+    position: relative;
+    top:-60px;
+    right: -105px;
+}
+.info{
+    position: relative;
+    top:-40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.stats{
+    padding: 20px;
+    position: relative;
+    top:-20px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    justify-content: space-around;
+    text-align: center;
+    border-top: 0.1px solid hsla(0, 0%, 90%,100%);
+}
+.b{
+   font-weight: 700;
+   font-size: larger;
+   color: var(--Very-dark-desaturated-blue);
+}
+#age{
+    font-weight: 700;
+   font-size: large;
+    color: var(--Dark-gray);
+}
+.s{
+   font-weight: 400;
+   font-size: smaller;
+   color:var(--Dark-gray);
+}
+.attribution { 
+    margin-top:1rem;
+    font-size: 11px; 
+    text-align: center;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (max-width:500px) {
+    .container{
+        margin-top: 15rem;
+        height: 25rem;
+    }
+    body{
+    background: url(./images/bg-pattern-bottom.svg) bottom -300px right -25px no-repeat, url(./images/bg-pattern-top.svg) top -50px left -20px no-repeat;
+    background-color: var(--Dark-cyan);
+    background-size:80% ,80% ;
+    }
+}
